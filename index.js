@@ -19,4 +19,4 @@ const getData = async (name) => {
 
   writer.writeRecords(dataArray)  
 }
-getData('forqan.tech.babypuzzles_edu.ads')
+getData('id app uri')
