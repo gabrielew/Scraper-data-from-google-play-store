@@ -7,18 +7,16 @@ const getData = async (name) => {
     sort: gplay.sort.RATING,
   })
   
-  const d = await data.map(item => {
+  const dataArray = await data.map(item => {
     return item.text
   }) 
   const writer = await createCsvWriter({
-    path: './csv/'+name+d.length+'.csv',
+    path: './csv/'+name+dataArray.length+'.csv',
     header: [
-      {id: 'text', title: d},
+      {id: 'text', title: dataArray},
     ]
   })
 
-  writer
-  .writeRecords(d)
-  
+  writer.writeRecords(dataArray)  
 }
-getData('passar ID URL')
+getData('forqan.tech.babypuzzles_edu.ads')
