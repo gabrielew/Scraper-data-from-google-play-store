@@ -1,0 +1,15 @@
+{
+  "name": "TCC",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": ""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "csv-writer": "^1.5.0",
+    "google-play-scraper": "^7.0.1"
+  }
+}
